@@ -3,11 +3,11 @@ package us.codecraft.fizzBuzz.numbersayer;
 /**
  * @author code4crafer@gmail.com
  */
-public class LiterallContainsMatcher extends NumberSayerBuildMatcher {
+public class LiteralContainsMatcher extends NumberSayerBuildMatcher {
 
     private int matchNumber;
 
-    public LiterallContainsMatcher(int matchNumber) {
+    public LiteralContainsMatcher(int matchNumber) {
         this.matchNumber = matchNumber;
     }
 

@@ -3,7 +3,7 @@ package us.codecraft.fizzBuzz.numbersayer;
 /**
  * @author code4crafer@gmail.com
  */
-public class ModMatcher extends NumberSayerBuildMatcher {
+public class ModMatcher implements Matcher {
 
     private int divisor;
 
@@ -19,16 +19,4 @@ public class ModMatcher extends NumberSayerBuildMatcher {
         return number % divisor == remainder;
     }
 
-    public static class Mod {
-        private int divisor;
-
-        protected Mod(int divisor) {
-            this.divisor = divisor;
-        }
-
-        public ModMatcher is(int remainder) {
-            return new ModMatcher(divisor, remainder);
-        }
-
-    }
 }

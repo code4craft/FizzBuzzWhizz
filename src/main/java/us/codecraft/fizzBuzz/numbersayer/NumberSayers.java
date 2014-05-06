@@ -9,12 +9,12 @@ import java.util.List;
  */
 public abstract class NumberSayers {
 
-    public static CompositeNumberSayer concat(NumberSayer... numberSayerArray) {
+    public static ConcatNumberSayer concat(NumberSayer... numberSayerArray) {
         List<NumberSayer> numberSayerList = new ArrayList<NumberSayer>(numberSayerArray.length);
         for (NumberSayer numberSayer : numberSayerArray) {
             numberSayerList.add(numberSayer);
         }
-        return new CompositeNumberSayer(numberSayerList);
+        return new ConcatNumberSayer(numberSayerList);
     }
 
     public static OrNumberSayer or(NumberSayer... sayerArray) {
@@ -30,7 +30,7 @@ public abstract class NumberSayers {
     }
 
     public static NumberSayerBuildMatcher contains(int matchNumber) {
-        return new LiterallContainsMatcher(matchNumber);
+        return new LiteralContainsMatcher(matchNumber);
     }
 
     public static NumberSayer echoInputNumber() {

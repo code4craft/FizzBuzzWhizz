@@ -6,11 +6,11 @@ import java.util.List;
  * @author code4crafter@gmail.com
  * @date 14-5-6
  */
-public class CompositeNumberSayer implements NumberSayer {
+public class ConcatNumberSayer implements NumberSayer {
 
     private List<NumberSayer> numberSayers;
 
-    protected CompositeNumberSayer(List<NumberSayer> numberSayers) {
+    protected ConcatNumberSayer(List<NumberSayer> numberSayers) {
         this.numberSayers = numberSayers;
     }
 
