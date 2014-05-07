@@ -73,3 +73,7 @@ public class NumberSequenceSayer {
     }
 }
 ```
+
+Detail in blog:
+
+[http://my.oschina.net/flashsword/blog/261140](http://my.oschina.net/flashsword/blog/261140)
